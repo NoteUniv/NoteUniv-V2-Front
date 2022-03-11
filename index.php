@@ -15,23 +15,38 @@
     <title>Noteuniv</title>
 </head>
 
-<body>
+<body class="bg-nuGray-100">
     <?php
     if (!empty($_GET)) {
         $page = $_GET['p'];
         if ($page) {
-            include("./views/parts/header.php");
+            ?>
+            <div class="grid grid-cols-12">
+            <?php
             include("./views/parts/sidebar.php");
-
+            ?>
+            <div class="col-span-10 minH-screen flex flex-col">
+            <?php
+            include("./views/parts/header.php");
             $file = "./views/" . $page . ".php";
             if (file_exists($file)) {
-                include($file);
+                ?>
+                <div class="flex-grow">
+                <?php
+                    include($file);
+                ?>
+                </div>
+                <?php
             } else {
                 echo '404';
             }
 
             include("./views/parts/footer.php");
             return;
+            ?>
+            </div>
+            </div>
+            <?php
         }
     }
     include("./views/login.php");
