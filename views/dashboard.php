@@ -2,7 +2,7 @@
     <div class="box box--big col-start-2 col-span-6 row-span-2">
         <div class="flex justify-between items-center mb-8">
             <h2 class="title title--underline">Last grades</h2>
-            <a href="#" class="btn-link">
+            <a href="" class="btn-link">
                 <span>View all my grades</span>
             </a>
         </div>
@@ -33,7 +33,7 @@
             <span class="text-nu-green text-4xl">14,95</span>
             <span class="text-nu-gray-300 text-xl">/ 20</span>
         </div>
-        <a href="#" class="btn-link w-full">
+        <a href="" class="btn-link w-full">
             <span>View my averages</span>
         </a>
     </div>
@@ -43,7 +43,7 @@
             <span class="text-nu-primary text-4xl">33</span>
             <span class="text-nu-gray-300 text-xl">/ 99</span>
         </div>
-        <a href="#" class="btn-link w-full">
+        <a href="" class="btn-link w-full">
             <span>View the ranking</span>
         </a>
     </div>

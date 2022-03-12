@@ -21,19 +21,25 @@
         <ul class="flex flex-col gap-y-8">
             <li>
                 <a href="./?p=dashboard" class="flex items-center hover:text-nu-secondary">
-                    <img src="./src/assets/images/dashboard-icon.svg" alt="" class="w-3 mr-4 transform scale-150">
+                    <div class="w-3 mr-4 transform scale-150">
+                        <?php getSVG("dashboard-icon.svg"); ?>
+                    </div>
                     <p class="text-sm">Dashboard</p>
                 </a>
             </li>
             <li>
                 <a href="./?p=grades" class="flex items-center hover:text-nu-secondary">
-                    <img src="./src/assets/images/grades-icon.svg" alt="" class="w-3 mr-4">
+                    <div class="w-3 mr-4">
+                        <?php getSVG("grades-icon.svg"); ?>
+                    </div>
                     <p class="text-sm">Grades & Averages</p>
                 </a>
             </li>
             <li>
-                <a href="" class="flex items-center hover:text-nu-secondary">
-                    <img src="./src/assets/images/ranking-icon.svg" alt="" class="w-3 mr-4">
+                <a href="./?p=ranking" class="flex items-center hover:text-nu-secondary">
+                    <div class="w-3 mr-4">
+                        <?php getSVG("ranking-icon.svg"); ?>
+                    </div>
                     <p class="text-sm">Ranking</p>
                 </a>
             </li>

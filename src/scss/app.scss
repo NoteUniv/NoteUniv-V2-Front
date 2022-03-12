@@ -19,7 +19,25 @@ svg {
 }
 
 .btn-link {
-  @apply flex px-2 py-1 border-2 border-nu-secondary border-solid text-xs text-nu-secondary font-medium;
+  @apply relative flex pl-4 pr-10 py-2 border-2 border-nu-secondary border-solid text-xs text-nu-secondary font-medium transition-colors duration-150;
+  line-height: 1.6;
+
+  &::after {
+    content: url("../assets/images/chevron-down.svg");
+    filter: invert(37%) sepia(94%) saturate(2346%) hue-rotate(202deg)
+      brightness(101%) contrast(86%);
+    @apply absolute right-4 top-1/2 transform -translate-y-1/2 -rotate-90 w-3 transition-all duration-150;
+  }
+
+  &:hover {
+    @apply bg-nu-secondary text-white;
+
+    &::after {
+      filter: invert(100%) sepia(15%) saturate(2%) hue-rotate(158deg)
+        brightness(110%) contrast(101%);
+      @apply translate-x-1;
+    }
+  }
 }
 
 .input {

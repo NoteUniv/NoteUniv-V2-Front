@@ -5,14 +5,16 @@
             <h1 class="text-2xl"><?php echo ucfirst($page) ?></h1>
         </div>
         <div class="relative" x-data="{ isOpen: false}">
-            <div class="flex items-center cursor-pointer py-2" @mouseEnter="isOpen = true" @mouseLeave="isOpen = false"
-                @keydown.escape="isOpen = false">
-                <img src="./src/assets/images/account-icon.svg" alt="" class="mr-3">
+            <div class="flex items-center cursor-pointer py-2" @mouseEnter="isOpen = true" @mouseLeave="isOpen = false">
+                <!-- <img src="./src/assets/images/account-icon.svg" alt="" class="mr-3"> -->
                 <p class="text-md font-semibold mr-4 text-nu-primary">email@etu.unistra.fr</p>
-                <div class="bg-white py-4 px-3 rounded-xl shadow-drop" ">
-                    <img src=" ./src/assets/images/chevron-down.svg" alt=""
-                    class="transform transition-transform duration-200" :class="{'-rotate-180':isOpen}">
-                </div>
+                <button class="bg-white py-4 px-3 rounded-xl shadow-drop" @keydown.enter="isOpen = true"
+                    @keydown.escape="isOpen = false">
+                    <div class="transform transition-transform duration-200 text-nu-primary"
+                        :class="{'-rotate-180':isOpen}">
+                        <?php getSVG('chevron-down.svg'); ?>
+                    </div>
+                </button>
                 <ul x-cloak x-show=" isOpen"
                     class="absolute font-normal bg-white shadow overflow-hidden rounded w-48 border right-0 z-20 top-full">
                     <li>
