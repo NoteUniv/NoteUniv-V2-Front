@@ -1,4 +1,4 @@
-<div class="grid grid-cols-10 bg-nuPrimary">
+<div class="grid grid-cols-10 bg-nu-primary">
     <div class="w-full text-white py-8 col-start-2 col-span-8 flex justify-between items-center">
         <div>
             <img src="./src/assets/images/logo-iut-blanc.svg" alt="IUT de Haguenau" class="w-2/3">
