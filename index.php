@@ -17,6 +17,16 @@
 
 <body class="bg-nu-gray-100">
     <?php
+    function getSVG($file)
+    {
+        $path = "./src/assets/images/";
+        $fullpath = $path . $file;
+        if (file_exists($fullpath)) {
+            echo file_get_contents($fullpath);
+        } else {
+            echo 'File not found';
+        }
+    }
     if (!empty($_GET)) {
         $page = $_GET['p'];
         if ($page) {
