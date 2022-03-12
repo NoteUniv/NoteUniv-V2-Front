@@ -6,26 +6,28 @@
                 <span>View all my grades</span>
             </a>
         </div>
-        <table class="w-full border-collapse border-l border-b border-r border-nu-gray-200 mb-4">
-            <thead>
-                <tr class="h-12 bg-nu-primary text-sm text-white">
-                    <th class="font-semibold text-left pl-4">Subject</th>
-                    <th class="font-semibold text-left pl-4">Name of work</th>
-                    <th class="font-semibold">My grade</th>
-                    <th class="font-semibold">Class average</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php for ($i = 0; $i < 5; $i++) : ?>
-                <tr class="h-12 border-b border-nu-gray-200 text-sm">
-                    <td class="pl-4">com</td>
-                    <td class="pl-4">Contrôle Comportement ...</td>
-                    <td class="text-center font-semibold text-nu-green">18</td>
-                    <td class="text-center">11.5</td>
-                </tr>
-                <?php endfor; ?>
-            </tbody>
-        </table>
+        <div class="relative max-h-[calc(6*3rem+1px)] overflow-y-auto mb-4">
+            <table class="w-full border-collapse border-l border-b border-r border-nu-gray-200">
+                <thead>
+                    <tr class="sticky top-0 h-12 bg-nu-primary text-sm text-white">
+                        <th class="font-semibold text-left pl-4">Subject</th>
+                        <th class="font-semibold text-left pl-4">Name of work</th>
+                        <th class="font-semibold">My grade</th>
+                        <th class="font-semibold">Class average</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php for ($i = 0; $i < 10; $i++) : ?>
+                    <tr class="h-12 border-b border-nu-gray-200 text-sm">
+                        <td class="pl-4">com</td>
+                        <td class="pl-4">Contrôle Comportement ...</td>
+                        <td class="text-center font-semibold text-nu-green">18</td>
+                        <td class="text-center">11.5</td>
+                    </tr>
+                    <?php endfor; ?>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="box box--small col-start-8 col-span-2 row-span-1 aspect-square flex flex-col justify-between">
         <h2 class="title title--underline">Overall average</h2>

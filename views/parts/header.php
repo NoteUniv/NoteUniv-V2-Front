@@ -1,8 +1,8 @@
 <div class="grid grid-cols-10">
     <div class="w-full col-start-2 col-span-8 pb-10 pt-16 flex justify-between">
         <div class="flex items-center">
-            <img src="./src/assets/images/<?php echo $page ?>-icon.svg" alt="" class="mr-4">
-            <h1 class="text-2xl"><?php echo ucfirst($page) ?></h1>
+            <img src="./src/assets/images/<?php echo $page ?>-icon.svg" alt="" class="mr-4 w-7 h-7">
+            <h1 class="text-3xl"><?php echo ucfirst($page) ?></h1>
         </div>
         <div class="relative" x-data="{ isOpen: false}">
             <div class="flex items-center cursor-pointer py-2" @mouseEnter="isOpen = true" @mouseLeave="isOpen = false">

@@ -1,11 +1,12 @@
 <div class="grid grid-cols-10 gap-y-8 mb-28">
     <div class="box box--big col-start-2 col-span-8">
-        <div class="flex justify-between mb-6">
+        <div class="flex justify-between mb-1">
             <a href="#current" class="btn">View my rank</a>
             <a href="" class="btn-link">Remove me from the ranking</a>
         </div>
+        <div class="sticky top-0 h-6 bg-white w-full outline outline-1 outline-white"></div>
         <table class="w-full border-collapse">
-            <thead>
+            <thead class="sticky top-6">
                 <tr class="h-12 text-base bg-nu-primary text-white">
                     <th class="font-semibold w-1/3">Rank</th>
                     <th class="font-semibold w-1/3">Student</th>
