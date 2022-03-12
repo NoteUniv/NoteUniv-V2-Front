@@ -20,10 +20,10 @@
 
 .title {
   @apply relative text-base font-medium w-fit leading-5;
-}
-.title::after {
-  content: "";
-  @apply absolute -bottom-2 left-0 bg-nu-primary h-0.5 w-8;
+  &::after {
+    content: "";
+    @apply absolute -bottom-2 left-0 bg-nu-primary h-0.5 w-8;
+  }
 }
 
 .box {

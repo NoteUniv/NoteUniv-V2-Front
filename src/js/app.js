@@ -1,4 +1,4 @@
-import "../css/app.css";
+import "../scss/app.scss";
 import Alpine from "alpinejs";
 
 window.Alpine = Alpine;

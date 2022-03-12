@@ -9,7 +9,9 @@
     <script type="module" src="dist/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Noteuniv</title>
 </head>
 
@@ -19,22 +21,22 @@
         $page = $_GET['p'];
         if ($page) {
     ?>
-            <div class="grid grid-cols-12">
-                <?php
+    <div class="grid grid-cols-12">
+        <?php
                 include("./views/parts/sidebar.php");
                 ?>
-                <div class="col-span-10 minH-screen flex flex-col">
-                    <?php
+        <div class="col-span-10 minH-screen flex flex-col">
+            <?php
                     include("./views/parts/header.php");
                     $file = "./views/" . $page . ".php";
                     if (file_exists($file)) {
                     ?>
-                        <div class="flex-grow">
-                            <?php
+            <div class="flex-grow">
+                <?php
                             include($file);
                             ?>
-                        </div>
-                    <?php
+            </div>
+            <?php
                     } else {
                         echo '404';
                     }
@@ -42,8 +44,8 @@
                     include("./views/parts/footer.php");
                     return;
                     ?>
-                </div>
-            </div>
+        </div>
+    </div>
     <?php
         }
     }
