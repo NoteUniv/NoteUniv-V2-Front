@@ -9,7 +9,7 @@ module.exports = {
         "nu-orange": "orange",
         "nu-red": "#fe4c6a",
         "nu-gray": {
-          100: "#F8F9FB",
+          100: "#F4F5F8",
           200: "#E6E6E6",
           300: "#C4C4C4",
           400: "#7A7A7A",

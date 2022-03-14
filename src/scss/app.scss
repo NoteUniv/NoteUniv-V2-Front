@@ -15,7 +15,8 @@ svg {
 }
 
 .btn {
-  @apply py-1.5 px-12 bg-nu-secondary text-white font-semibold;
+  @apply py-1.5 px-8 bg-nu-secondary text-white font-semibold text-xs;
+  line-height: 1.6;
 }
 
 .btn-link {
