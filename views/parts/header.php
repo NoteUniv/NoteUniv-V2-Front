@@ -8,7 +8,7 @@
             <div class="flex items-center cursor-pointer py-2" @mouseEnter="isOpen = true" @mouseLeave="isOpen = false">
                 <!-- <img src="./src/assets/images/account-icon.svg" alt="" class="mr-3"> -->
                 <p class="text-md font-semibold mr-4 text-nu-primary">email@etu.unistra.fr</p>
-                <button class="bg-white py-4 px-3 rounded-xl shadow-drop" @keydown.enter="isOpen = true"
+                <button class="bg-white py-4 px-3 shadow-drop" @keydown.enter="isOpen = true"
                     @keydown.escape="isOpen = false">
                     <div class="transform transition-transform duration-200 text-nu-primary"
                         :class="{'-rotate-180':isOpen}">
@@ -16,7 +16,7 @@
                     </div>
                 </button>
                 <ul x-cloak x-show=" isOpen"
-                    class="absolute font-normal bg-white shadow overflow-hidden rounded w-48 border right-0 z-20 top-full">
+                    class="absolute font-normal bg-white shadow w-48 border right-0 z-20 top-full">
                     <li>
                         <a href="#"
                             class="flex items-center px-3 py-3 text-nu-primary hover:bg-nu-secondary hover:text-white transition-colors duration-150">
