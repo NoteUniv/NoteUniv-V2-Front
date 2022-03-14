@@ -48,6 +48,21 @@ svg {
   }
 }
 
+.select {
+  @apply relative;
+
+  select {
+    @apply appearance-none;
+  }
+
+  &::after {
+    content: url("../assets/images/chevron-down.svg");
+    filter: invert(100%) sepia(15%) saturate(2%) hue-rotate(158deg)
+      brightness(110%) contrast(101%);
+    @apply absolute top-1/2 -translate-y-1/2 right-4 w-4 pointer-events-none;
+  }
+}
+
 .title {
   @apply relative text-base font-medium w-fit leading-5 pb-1.5 overflow-hidden;
   &::after {

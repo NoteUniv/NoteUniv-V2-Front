@@ -2,14 +2,17 @@
     <a href="#" class="bg-nu-primary w-full aspect-square flex items-center justify-center">
         <img class="w-2/3" src="./src/assets/images/logo.svg" alt="">
     </a>
-    <select name="semesters" id="semester-select" class="bg-nu-secondary w-full text-white px-6 py-2">
-        <option value="1">Semester 1</option>
-        <option value="2">Semester 2</option>
-        <option value="3">Semester 3</option>
-        <option value="4">Semester 4</option>
-        <option value="5">Semester 5</option>
-        <option value="6">Semester 6</option>
-    </select>
+    <div class="select">
+        <select name="semesters" id="semester-select"
+            class="bg-nu-secondary w-full text-white px-6 py-2 focus:outline-none">
+            <option value="1">Semester 1</option>
+            <option value="2">Semester 2</option>
+            <option value="3">Semester 3</option>
+            <option value="4">Semester 4</option>
+            <option value="5">Semester 5</option>
+            <option value="6">Semester 6</option>
+        </select>
+    </div>
     <div class="bg-nu-gray-100 w-full py-4 text-center">
         <p class="mb-2">Overall average</p>
         <div>
