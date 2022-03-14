@@ -15,11 +15,11 @@ svg {
 }
 
 .btn {
-  @apply py-1.5 px-12 bg-nu-secondary text-white font-semibold;
+  @apply py-1.5 rounded-md bg-nu-secondary text-white font-semibold;
 }
 
 .btn-link {
-  @apply relative flex pl-4 pr-10 py-1.5 border-2 border-nu-secondary border-solid text-xs text-nu-secondary font-medium transition-colors duration-150;
+  @apply relative flex pl-4 pr-10 py-1.5 border-2 border-nu-secondary border-solid rounded-md text-xs text-nu-secondary font-medium transition-colors duration-150;
   line-height: 1.6;
 
   &::after {
@@ -42,6 +42,10 @@ svg {
 
 .input {
   @apply block w-full border border-nu-gray-200;
+
+  &:focus + div {
+    @apply bg-nu-primary;
+  }
 }
 
 .title {
