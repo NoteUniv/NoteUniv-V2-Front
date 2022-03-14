@@ -29,7 +29,7 @@
             </li>
             <li>
                 <a href="./?p=grades" class="flex items-center hover:text-nu-secondary">
-                    <div class="w-3 mr-4">
+                    <div class="w-3 mr-4 transform scale-150">
                         <?php getSVG("grades-icon.svg"); ?>
                     </div>
                     <p class="text-sm">Grades & Averages</p>
@@ -37,7 +37,7 @@
             </li>
             <li>
                 <a href="./?p=ranking" class="flex items-center hover:text-nu-secondary">
-                    <div class="w-3 mr-4">
+                    <div class="w-3 mr-4 transform scale-150">
                         <?php getSVG("ranking-icon.svg"); ?>
                     </div>
                     <p class="text-sm">Ranking</p>

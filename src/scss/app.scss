@@ -15,13 +15,11 @@ svg {
 }
 
 .btn {
-  @apply py-1.5 px-8 bg-nu-secondary text-white font-semibold text-xs;
-  line-height: 1.6;
+  @apply py-2 px-8 bg-nu-secondary text-white font-semibold text-xs inline-block;
 }
 
 .btn-link {
-  @apply relative flex pl-4 pr-10 py-1.5 border-2 border-nu-secondary border-solid text-xs text-nu-secondary font-medium transition-colors duration-150;
-  line-height: 1.6;
+  @apply relative flex pl-4 pr-10 py-2 border-2 border-nu-secondary border-solid text-xs text-nu-secondary font-medium transition-colors duration-150;
 
   &::after {
     content: url("../assets/images/chevron-down.svg");
