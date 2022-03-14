@@ -20,7 +20,6 @@ svg {
 
 .btn-link {
   @apply relative flex pl-4 pr-10 py-1.5 border-2 border-nu-secondary border-solid rounded-md text-xs text-nu-secondary font-medium transition-colors duration-150;
-  line-height: 1.6;
 
   &::after {
     content: url("../assets/images/chevron-down.svg");
