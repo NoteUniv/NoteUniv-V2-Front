@@ -36,7 +36,7 @@
                 include("./views/parts/sidebar.php");
                 ?>
         <div class="h-screen max-h-screen flex flex-col flex-grow min-w-0 overflow-x-hidden overflow-y-auto">
-            <div>
+            <div class="flex-grow">
                 <?php
                         include("./views/parts/header.php");
                         $file = "./views/" . $page . ".php";
