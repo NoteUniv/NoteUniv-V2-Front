@@ -74,11 +74,11 @@
                             </td>
                         </tr>
                         <tr class="h-12 text-sm border-l border-b border-r border-nu-gray-200" x-show="!isOpen">
-                            <td class="text-right px-6 font-semibold">Average</td>
+                            <td class="text-right px-4 font-semibold">Average</td>
                             <td
-                                class="text-center font-semibold bg-nu-green text-nu-primary text-lg border-l border-r border-nu-gray-200">
+                                class="text-center px4 font-semibold bg-nu-green text-nu-primary text-lg border-l border-r border-nu-gray-200">
                                 16</td>
-                            <td class="text-center font-semibold">12</td>
+                            <td class="text-center px-4 font-semibold">12</td>
                         </tr>
                     </tbody>
                 </table>
@@ -98,8 +98,8 @@
                 <tbody>
                     <?php for ($i = 0; $i < 2; $i++) : ?>
                     <tr class="h-12">
-                        <td class="border border-nu-gray-200 px-6">UE1</td>
-                        <td class="border border-nu-gray-200 text-center font-semibold text-nu-green">18</td>
+                        <td class="border border-nu-gray-200 px-4">UE1</td>
+                        <td class="border border-nu-gray-200 px-4 text-center font-semibold text-nu-green">18</td>
                     </tr>
                     <?php endfor; ?>
                 </tbody>
@@ -107,7 +107,7 @@
             <div class="xl:max-w-2/6 flex-shrink inline-grid">
                 <h3 class="inline-block font-semibold mb-1 text-center xl:text-left">Overall average</h3>
                 <div class="px-12 py-6 bg-nu-green flex justify-center items-end">
-                    <span class="text-nu-primary font-normal text-4xl">14,95</span>
+                    <span class="text-nu-primary font-normal text-4xl mr-1">14,95</span>
                     <span class="text-nu-gray-400">/ 20</span>
                 </div>
             </div>

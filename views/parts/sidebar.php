@@ -5,9 +5,9 @@
             <div class="flex-shrink-0 w-4 h-4 ml-4"><?php getSVG('menu-icon.svg'); ?></div>
         </div>
     </button>
-    <div class="fixed z-10 top-0 left-0 h-screen xl:relative xl:block" x-cloak :class="{'hidden': !isOpen}">
+    <div class="fixed z-10 top-0 left-0 h-screen xl:relative xl:block" x-cloak x-show="isOpen">
         <aside
-            class="relative z-20 xl:sticky flex flex-col top-0 col-span-2 bg-white h-screen rounded-tr-md shadow-drop -translate-x-full xl:translate-x-0"
+            class="relative z-20 xl:sticky w-72 xl:w-60 flex flex-col top-0 col-span-2 bg-white h-screen rounded-tr-md shadow-drop overflow-hidden -translate-x-full transition-transform duration-500 xl:translate-x-0"
             :class="{'!translate-x-0': isOpen}">
             <a href="#" class="bg-nu-primary w-full aspect-square flex items-center justify-center">
                 <img class="w-2/3" src="./src/assets/images/logo.svg" alt="">
@@ -59,8 +59,11 @@
                 </ul>
             </nav>
         </aside>
-        <div class="absolute z-10 left-0 top-0 w-screen h-screen bg-black/60 backdrop-filter backdrop-blur xl:hidden"
+        <div class="absolute z-10 left-0 top-0 w-screen h-screen bg-white/80 backdrop-filter backdrop-blur-sm xl:hidden"
             @click="isOpen = false">
+        </div>
+        <div class="absolute z-20 -right-8 top-4 text-nu-primary w-6 h-6 rotate-45 pointer-events-none xl:hidden">
+            <?php getSVG('plus-icon.svg'); ?>
         </div>
     </div>
 </div>
