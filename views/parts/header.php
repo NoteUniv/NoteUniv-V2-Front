@@ -19,7 +19,7 @@
                     </div>
                 </button>
                 <ul x-cloak x-show=" isOpen"
-                    class="absolute font-normal bg-white shadow outline outline-1 outline-nu-gray-200 rounded-md overflow-hidden w-48 right-0 z-20 top-full">
+                    class="absolute font-normal bg-white shadow rounded-md overflow-hidden w-48 right-0 z-20 top-full">
                     <li>
                         <a href="#"
                             class="flex items-center px-3 py-3 text-nu-primary hover:bg-nu-secondary hover:text-white transition-colors duration-150">

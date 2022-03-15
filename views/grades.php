@@ -13,9 +13,9 @@
                 <table class="table w-full border-collapse">
                     <thead>
                         <tr class="h-12 text-base bg-nu-primary text-white cursor-pointer" @click="isOpen = !isOpen">
-                            <th class="font-semibold text-left px-4 w-full">English</th>
-                            <th class="font-semibold px-4" :class="{'min-w-[100px]': isOpen}">Student</th>
-                            <th class="font-semibold px-4" :class="{'min-w-[250px]': isOpen}">Class</th>
+                            <th class="font-semibold text-left px-4 w-3/6">English</th>
+                            <th class="font-semibold px-4 w-1/6" :class="{'min-w-[100px]': isOpen}">Student</th>
+                            <th class="font-semibold px-4 w-2/6" :class="{'min-w-[250px]': isOpen}">Class</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,9 +24,9 @@
                                 <table class="w-full border-collapse border-l border-b border-r border-nu-gray-200">
                                     <thead class="w-full">
                                         <tr class="h-12 bg-nu-gray-100 text-sm text-nu-primary">
-                                            <th class="font-semibold text-left px-4 w-full">Work name</th>
-                                            <th class="font-semibold px-4 min-w-[100px]">Grade</th>
-                                            <th class="font-semibold px-4 min-w-[250px]">
+                                            <th class="font-semibold text-left px-4 w-3/6">Work name</th>
+                                            <th class="font-semibold px-4 w-1/6 min-w-[100px]">Grade</th>
+                                            <th class="font-semibold px-4 w-2/6 min-w-[250px]">
                                                 <div class="flex">
                                                     <span class="w-full">Average</span>
                                                     <span class="w-full">Min</span>
@@ -36,12 +36,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php for ($i = 0; $i < 1; $i++) : ?>
+                                        <?php for ($i = 0; $i < 3; $i++) : ?>
                                         <tr class="h-12 text-sm">
                                             <td class="border border-nu-gray-200 px-4">
                                                 <span>Assesment on Behavior & Leadership</span>
-                                                <span
-                                                    class="inline-block ml-2 w-4 h-4 bg-nu-secondary rounded-full text-white font-medium text-xs text-center cursor-pointer">i</span>
+                                                <button
+                                                    class="relative inline-block ml-2 w-6 leading-6 bg-nu-secondary rounded-md text-white font-light text-xs text-center cursor-pointer"
+                                                    x-data="{isInfoOpen: false}" @click="isInfoOpen = true">
+                                                    <span>i</span>
+                                                    <div class="absolute left-full top-0 box box--big text-nu-primary"
+                                                        x-show="isInfoOpen" @click.outside="isInfoOpen = false">
+                                                        Content for modal <?php echo $i ?>
+                                                    </div>
+                                                </button>
+
                                             </td>
                                             <td
                                                 class="border border-nu-gray-200 text-center text-lg px-4 font-semibold text-nu-green">
@@ -56,7 +64,8 @@
                                         </tr>
                                         <?php endfor; ?>
                                         <tr class="h-12 text-sm">
-                                            <td class="text-right px-4 font-semibold border border-nu-gray-200">English
+                                            <td class="text-right px-4 font-semibold border border-nu-gray-200">
+                                                English
                                                 average</td>
                                             <td
                                                 class="text-center px-4 font-semibold bg-nu-green text-nu-primary text-lg border border-nu-gray-200">
