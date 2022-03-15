@@ -6,7 +6,7 @@
             <div class="flex-shrink-0 w-4 h-4 ml-4"><?php getSVG('menu-icon.svg'); ?></div>
         </div>
     </button>
-    <div class="fixed z-10 top-0 left-0 h-screen xl:relative xl:block" x-cloak x-show="isOpen">
+    <div class="fixed z-10 top-0 left-0 h-screen xl:relative xl:block" x-cloak :class="{'hidden': !isOpen}">
         <aside
             class="relative z-20 xl:sticky w-72 xl:w-60 flex flex-col top-0 col-span-2 bg-white h-screen rounded-tr-md shadow-drop overflow-hidden -translate-x-full transition-transform duration-500 xl:translate-x-0"
             :class="{'!translate-x-0': isOpen}">

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: clamp(0.8rem, 2vw, 1.15rem);
+}
+
 * {
   font-family: Montserrat, sans-serif;
 }
