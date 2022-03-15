@@ -1,18 +1,21 @@
-<div class="grid grid-cols-10">
+<div class="px-4 md:px-12">
     <div class="w-full col-start-2 col-span-8 pb-10 pt-16 flex justify-between">
         <div class="flex items-center">
             <img src="./src/assets/images/<?php echo $page ?>-icon.svg" alt="" class="mr-4 w-7 h-7">
-            <h1 class="text-3xl"><?php echo ucfirst($page) ?></h1>
+            <h1 class="text-2xl xl:text-3xl"><?php echo ucfirst($page) ?></h1>
         </div>
         <div class="relative" x-data="{ isOpen: false}">
             <div class="flex items-center cursor-pointer py-2" @mouseEnter="isOpen = true" @mouseLeave="isOpen = false">
                 <!-- <img src="./src/assets/images/account-icon.svg" alt="" class="mr-3"> -->
-                <p class="text-md font-semibold mr-4 text-nu-primary">email@etu.unistra.fr</p>
-                <button class="bg-white py-4 px-3 shadow-drop rounded-md" @keydown.enter="isOpen = true"
+                <p class="hidden xl:block text-md font-semibold mr-4 text-nu-primary">email@etu.unistra.fr</p>
+                <button class="bg-white p-3 xl:py-4 shadow-drop rounded-md" @keydown.enter="isOpen = true"
                     @keydown.escape="isOpen = false">
-                    <div class="transform transition-transform duration-200 text-nu-primary"
+                    <div class="hidden xl:block transform transition-transform duration-200 text-nu-primary"
                         :class="{'-rotate-180':isOpen}">
                         <?php getSVG('chevron-down.svg'); ?>
+                    </div>
+                    <div class="xl:hidden text-nu-primary">
+                        <?php getSVG('account-icon.svg') ?>
                     </div>
                 </button>
                 <ul x-cloak x-show=" isOpen"

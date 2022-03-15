@@ -31,29 +31,31 @@
         $page = $_GET['p'];
         if ($page) {
     ?>
-    <div class="grid grid-cols-12">
+    <div class="flex w-full overflow-hidden">
         <?php
                 include("./views/parts/sidebar.php");
                 ?>
-        <div class="col-span-10 minH-screen flex flex-col">
-            <?php
-                    include("./views/parts/header.php");
-                    $file = "./views/" . $page . ".php";
-                    if (file_exists($file)) {
-                    ?>
-            <div class="flex-grow">
+        <div class="h-screen max-h-screen flex flex-col flex-grow min-w-0 overflow-x-hidden overflow-y-auto">
+            <div>
                 <?php
-                            include($file);
-                            ?>
+                        include("./views/parts/header.php");
+                        $file = "./views/" . $page . ".php";
+                        if (file_exists($file)) {
+                        ?>
+                <div class="flex-grow">
+                    <?php
+                                include($file);
+                                ?>
+                </div>
             </div>
             <?php
-                    } else {
-                        echo '404';
-                    }
+                        } else {
+                            echo '404';
+                        }
 
-                    include("./views/parts/footer.php");
-                    return;
-                    ?>
+                        include("./views/parts/footer.php");
+                        return;
+                ?>
         </div>
     </div>
     <?php

@@ -10,6 +10,11 @@ svg {
   @apply w-full h-full;
 }
 
+th,
+td {
+  white-space: nowrap;
+}
+
 [x-cloak] {
   display: none !important;
 }
@@ -77,7 +82,7 @@ svg {
 .box {
   @apply bg-white shadow-drop;
   &--big {
-    @apply p-6;
+    @apply p-4 xl:p-6;
   }
   &--small {
     @apply p-4;
