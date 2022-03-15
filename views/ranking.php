@@ -1,7 +1,7 @@
-<div class="grid grid-cols-10 gap-y-8 mb-28">
+<div class="mb-4 md:mb-12 px-4 md:px-12">
     <div class="box box--big col-start-2 col-span-8">
-        <div class="flex justify-between mb-1">
-            <a href="#current" class="btn">View my rank</a>
+        <div class="flex flex-col md:flex-row justify-between mb-1">
+            <a href="#current" class="btn text-center mb-4 px-6 md:mb-0">View my rank</a>
             <a href="" class="btn-link">Remove me from the ranking</a>
         </div>
         <div class="sticky top-0 h-6 bg-white w-full outline outline-1 outline-white"></div>

@@ -1,6 +1,7 @@
 <div class="w-8 md:w-12 xl:w-auto h-screen flex-shrink-0" x-data="{isOpen: false}">
-    <button class="h-screen w-8 md:w-12 bg-nu-primary text-white rounded-tr-md xl:hidden" @click="isOpen = true">
-        <div class="flex items-center -rotate-90 -translate-y-[38vh]">
+    <button class="relative h-screen w-8 md:w-12 bg-nu-primary text-white rounded-tr-md xl:hidden"
+        @click="isOpen = true">
+        <div class="absolute top-6 md:top-8 -left-6 md:-left-4 flex items-center -rotate-90 translate-y-full">
             <span class="uppercase font-semibold text-sm tracking-wide">Menu</span>
             <div class="flex-shrink-0 w-4 h-4 ml-4"><?php getSVG('menu-icon.svg'); ?></div>
         </div>

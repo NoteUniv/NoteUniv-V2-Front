@@ -82,7 +82,7 @@ td {
 .box {
   @apply bg-white shadow-drop;
   &--big {
-    @apply p-4 xl:p-6;
+    @apply p-4 md:p-6;
   }
   &--small {
     @apply p-4;
