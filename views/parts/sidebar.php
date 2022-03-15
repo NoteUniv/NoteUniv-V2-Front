@@ -1,11 +1,13 @@
 <div class="w-8 md:w-12 xl:w-auto h-screen flex-shrink-0" x-data="{isOpen: false}">
     <button class="h-screen w-8 md:w-12 bg-nu-primary text-white rounded-tr-md xl:hidden" @click="isOpen = true">
-        <span
-            class="inline-block uppercase font-semibold text-sm tracking-wide -rotate-90 -translate-x-2 md:translate-x-0">Menu</span>
+        <div class="flex items-center -rotate-90 -translate-y-[38vh]">
+            <span class="uppercase font-semibold text-sm tracking-wide">Menu</span>
+            <div class="flex-shrink-0 w-4 h-4 ml-4"><?php getSVG('menu-icon.svg'); ?></div>
+        </div>
     </button>
     <div class="fixed z-10 top-0 left-0 h-screen xl:relative xl:block" x-cloak :class="{'hidden': !isOpen}">
         <aside
-            class="relative z-20 xl:sticky flex flex-col top-0 col-span-2 bg-white h-screen overflow-y-hidden shadow-drop -translate-x-full xl:translate-x-0"
+            class="relative z-20 xl:sticky flex flex-col top-0 col-span-2 bg-white h-screen rounded-tr-md shadow-drop -translate-x-full xl:translate-x-0"
             :class="{'!translate-x-0': isOpen}">
             <a href="#" class="bg-nu-primary w-full aspect-square flex items-center justify-center">
                 <img class="w-2/3" src="./src/assets/images/logo.svg" alt="">
