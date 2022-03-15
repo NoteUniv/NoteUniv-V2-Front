@@ -1,4 +1,4 @@
-<div class="mb-4 md:mb-12 px-4 md:px-12 flex flex-col gap-y-4 md:gap-y-12">
+<div class="mb-24 px-4 md:px-12 flex flex-col gap-y-4 md:gap-y-12">
     <div class="box" x-data="{isOpen: true}">
         <div class="flex justify-between items-center cursor-pointer p-4 xl:p-6" @click="isOpen = !isOpen">
             <h2 class="title" :class="{'title--underline': isOpen}">UE1</h2>
@@ -6,16 +6,16 @@
                 :class="{'-rotate-180': isOpen}"><?php getSVG('chevron-down.svg') ?></span>
         </div>
         <div x-cloak x-show="isOpen" class="flex flex-col gap-y-6 px-4 pb-4 pt-2 xl:px-6 xl:pb-6 xl:pt-2">
-            <div class="relative" x-data="{isOpen: false}">
+            <div class="relative" x-data="{isOpen: false}" :class="{'overflow-x-auto': isOpen}">
                 <span
                     class="hidden xl:inline absolute right-6 top-4 w-4 h-4 text-white transform transition-transform duration-200 pointer-events-none"
                     :class="{'-rotate-180': isOpen}"><?php getSVG('chevron-down.svg') ?></span>
-                <table class="block xl:table w-full overflow-x-auto border-collapse">
+                <table class="table w-full border-collapse">
                     <thead>
                         <tr class="h-12 text-base bg-nu-primary text-white cursor-pointer" @click="isOpen = !isOpen">
-                            <th class="font-semibold text-left px-4 w-3/6">English</th>
-                            <th class="font-semibold px-4 w-1/6">Student</th>
-                            <th class="font-semibold px-4 w-2/6">Class</th>
+                            <th class="font-semibold text-left px-4 w-full">English</th>
+                            <th class="font-semibold px-4" :class="{'min-w-[100px]': isOpen}">Student</th>
+                            <th class="font-semibold px-4" :class="{'min-w-[250px]': isOpen}">Class</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,13 +24,13 @@
                                 <table class="w-full border-collapse border-l border-b border-r border-nu-gray-200">
                                     <thead class="w-full">
                                         <tr class="h-12 bg-nu-gray-100 text-sm text-nu-primary">
-                                            <th class="font-semibold text-left px-4 w-3/6">Work name</th>
-                                            <th class="font-semibold px-4 w-1/6">Grade</th>
-                                            <th class="font-semibold w-2/6">
+                                            <th class="font-semibold text-left px-4 w-full">Work name</th>
+                                            <th class="font-semibold px-4 min-w-[100px]">Grade</th>
+                                            <th class="font-semibold px-4 min-w-[250px]">
                                                 <div class="flex">
-                                                    <span class="w-full px-4">Average</span>
-                                                    <span class="w-full px-4">Min</span>
-                                                    <span class="w-full px-4">Max</span>
+                                                    <span class="w-full">Average</span>
+                                                    <span class="w-full">Min</span>
+                                                    <span class="w-full">Max</span>
                                                 </div>
                                             </th>
                                         </tr>
@@ -46,11 +46,11 @@
                                             <td
                                                 class="border border-nu-gray-200 text-center text-lg px-4 font-semibold text-nu-green">
                                                 12</td>
-                                            <td class="border border-nu-gray-200 text-center">
+                                            <td class="border border-nu-gray-200 px-4 text-center">
                                                 <div class="flex">
-                                                    <span class="w-full px-4">10</span>
-                                                    <span class="w-full px-4">8</span>
-                                                    <span class="w-full px-4">15</span>
+                                                    <span class="w-full">10</span>
+                                                    <span class="w-full">8</span>
+                                                    <span class="w-full">15</span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -61,11 +61,11 @@
                                             <td
                                                 class="text-center px-4 font-semibold bg-nu-green text-nu-primary text-lg border border-nu-gray-200">
                                                 16</td>
-                                            <td class="text-center font-semibold border border-nu-gray-200">
+                                            <td class="text-center px-4 font-semibold border border-nu-gray-200">
                                                 <div class="flex">
-                                                    <span class="w-full px-4">12</span>
-                                                    <span class="w-full px-4">6</span>
-                                                    <span class="w-full px-4">16</span>
+                                                    <span class="w-full">12</span>
+                                                    <span class="w-full">6</span>
+                                                    <span class="w-full">16</span>
                                                 </div>
                                             </td>
                                         </tr>

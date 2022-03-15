@@ -1,4 +1,4 @@
-<div class="mb-4 md:mb-12 px-4 md:px-12">
+<div class="mb-24 px-4 md:px-12">
     <div class="box box--big col-start-2 col-span-8">
         <div class="flex flex-col md:flex-row justify-between mb-1">
             <a href="#current" class="btn text-center mb-4 px-6 md:mb-0">View my rank</a>
