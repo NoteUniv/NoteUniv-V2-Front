@@ -24,7 +24,7 @@ td {
 }
 
 .btn {
-  @apply py-1.5 rounded-md bg-nu-secondary text-white font-semibold;
+  @apply py-1.5 rounded-md bg-nu-secondary text-white font-semibold transition-colors duration-200 hover:bg-nu-secondary/80;
 }
 
 .btn-link {

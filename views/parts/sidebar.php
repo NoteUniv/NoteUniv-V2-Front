@@ -5,7 +5,7 @@
             class="relative z-20 xl:sticky w-72 xl:w-60 flex flex-col top-0 col-span-2 bg-white h-screen rounded-tr-md shadow-drop">
             <button
                 class="absolute left-full top-0 h-screen w-8 md:w-12 bg-nu-primary text-white rounded-tr-md xl:hidden transition-colors duration-300"
-                :class="{'bg-transparent text-nu-primary':isOpen}" @click="isOpen = !isOpen">
+                :class="{'bg-transparent text-nu-primary':isOpen, 'bg-nu-primary': !isOpen}" @click="isOpen = !isOpen">
                 <div class="absolute top-6 md:top-8 -left-6 md:-left-4 flex items-center -rotate-90 translate-y-full">
                     <span class="uppercase font-medium text-sm tracking-wide">Menu</span>
                     <div class="flex-shrink-0 w-4 h-4 ml-4">
