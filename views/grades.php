@@ -13,7 +13,8 @@
                 <table class="table w-full border-collapse">
                     <thead>
                         <tr class="h-12 text-base bg-nu-primary text-white cursor-pointer" @click="isOpen = !isOpen">
-                            <th class="font-semibold text-left px-4 w-3/6">English</th>
+                            <th class="font-semibold text-left px-4 w-3/6 max-w-0 overflow-hidden overflow-ellipsis">
+                                Very long name</th>
                             <th class="font-semibold px-4 w-1/6" :class="{'min-w-[100px]': isOpen}">Student</th>
                             <th class="font-semibold px-4 w-2/6" :class="{'min-w-[250px]': isOpen}">Class</th>
                         </tr>
@@ -41,11 +42,12 @@
                                             <td class="border border-nu-gray-200 px-4">
                                                 <span>Assesment on Behavior & Leadership</span>
                                                 <button
-                                                    class="relative inline-block ml-2 w-6 leading-6 bg-nu-secondary rounded-md text-white font-light text-xs text-center cursor-pointer"
+                                                    class="relative inline-block ml-2 w-5 leading-5 bg-nu-secondary rounded-full cursor-pointer"
                                                     x-data="{isInfoOpen: false}" @click="isInfoOpen = true">
-                                                    <span>i</span>
-                                                    <div class="absolute left-full top-0 box box--big text-nu-primary"
-                                                        x-show="isInfoOpen" @click.outside="isInfoOpen = false">
+                                                    <span class="text-white font-light text-xs text-center">i</span>
+                                                    <div class="absolute -right-2 top-1/2 translate-x-full -translate-y-1/2 text-sm text-nu-primary bg-white rounded-md border-2 border-nu-secondary p-4"
+                                                        x-show="isInfoOpen" @click.stop @click="isInfoOpen = false"
+                                                        @click.outside="isInfoOpen = false">
                                                         Content for modal <?php echo $i ?>
                                                     </div>
                                                 </button>

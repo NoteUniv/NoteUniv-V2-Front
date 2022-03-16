@@ -1,5 +1,5 @@
 <div class="mb-24 px-4 md:px-12">
-    <div class="relative flex flex-col-reverse xl:flex-row gap-4">
+    <div class="relative flex flex-col xl:flex-row gap-4">
         <div class="box box--big flex-grow">
             <div class="flex flex-col md:flex-row justify-between xl:items-center mb-6">
                 <h2 class="title title--underline mb-6 md:mb-0">Last grades</h2>
@@ -38,7 +38,7 @@
                     </tbody>
                 </table>
                 <div
-                    class="xl:hidden h-12 border-l border-b border-r border-nu-gray-200 text-xl text-nu-primary bg-nu-gray-100 text-center font-bold tracking-widest cursor-pointer transition-colors duration-200 hover:bg-gray-200 leading-10">
+                    class="xl:hidden h-10 border-l border-b border-r border-nu-gray-200 text-xl text-nu-primary bg-nu-gray-100 text-center font-bold tracking-widest cursor-pointer transition-colors duration-200 hover:bg-gray-200 leading-8">
                     ...
                 </div>
             </div>
