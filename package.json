@@ -1,16 +1,14 @@
 {
-  "name": "noteuniv-front",
+  "name": "noteuniv-v2-front",
   "version": "1.0.0",
-  "description": "",
-  "source": "src/js/app.js",
+  "description": "Check your latest grades as well as a recap of your semesters",
   "scripts": {
     "clean": "rm -rf .parcel-cache dist",
     "start": "parcel",
     "build": "npm run clean && parcel build --public-url ./"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Noteuniv team",
+  "license": "CC-BY-SA-4.0",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "autoprefixer": "^10.4.2",
