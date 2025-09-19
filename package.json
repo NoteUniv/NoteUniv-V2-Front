@@ -9,14 +9,14 @@
   },
   "author": "Noteuniv team",
   "license": "CC-BY-SA-4.0",
+  "source": "src/js/app.js",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.2",
-    "autoprefixer": "^10.4.2",
-    "parcel": "^2.3.2",
-    "postcss": "^8.4.8",
-    "tailwindcss": "^3.0.23"
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "alpinejs": "^3.9.1"
+    "alpinejs": "^3.15.0"
   }
 }
