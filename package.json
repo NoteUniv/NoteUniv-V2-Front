@@ -11,12 +11,12 @@
   "license": "CC-BY-SA-4.0",
   "source": "src/js/app.js",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.0",
-    "parcel": "^2.16.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19"
   },
   "dependencies": {
-    "alpinejs": "^3.15.0"
+    "alpinejs": "^3.15.8"
   }
 }
